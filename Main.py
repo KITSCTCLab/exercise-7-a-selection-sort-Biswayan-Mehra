@@ -2,14 +2,12 @@ from typing import List
 
 def selectionSort(array, size) -> List[int]:
   # Write your code here
-  for( int i=0;i<size-1;i++){
-    for(int j=i+1; j<size;j++){
-      if(array[i]>array[j]{
+  for i in range(size-1):
+    for j in range(size):
+      if array[i]>array[j]:
         temp = array[i]
         array[i] = array[j]
         array[j] = temp
-    }
-  }
 
 # Do not change the following code
 input_data = input()
