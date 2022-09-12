@@ -3,7 +3,7 @@ from typing import List
 def selectionSort(array, size) -> List[int]:
   # Write your code here
   for i in range(size-1):
-    for j in range(size):
+    for j in range(i+1, size):
       if array[i]>array[j]:
         temp = array[i]
         array[i] = array[j]
